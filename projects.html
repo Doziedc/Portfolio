@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Akujobi Daniel Chidozie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none' stroke='%230284C7' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 12L4 20L14 28' /%3E%3Cpath d='M26 12L36 20L26 28' /%3E%3Cpath d='M22 8L18 32' /%3E%3C/svg%3E">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="theme-init.js"></script>
+</head>
+<body>
+
+     <div class="orb-1"></div>
+<div class="orb-2"></div>
+
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+
+    <!-- ============== HISTOBUDDY ============== -->
+    <header class="case-hero" id="histobuddy">
+        <h1>HistoBuddy</h1>
+        <p class="subtitle">Learn History Through Adventure</p>
+    </header>
+
+    <main>
+        <section class="case-section">
+            <h2>The Problem</h2>
+            <p>Nigerian history often feels distant and boring when taught in class. HistoBuddy turns it into an adventure, so learning feels like an experience, not a lesson.</p>
+        </section>
+
+        <section class="case-section">
+            <h2>Who It's For</h2>
+            <p>Children learning Nigerian history, who need history to feel fun and alive rather than like a textbook. Because the users are children, the design keeps things simple, playful, and easy to tap through without adult help.</p>
+        </section>
+
+        <section class="case-section">
+            <h2>User Flow</h2>
+            <p>Here's how a child moves through the app, from sign-up to finishing a lesson.</p>
+            <img src="histobuddy/userflow.png" alt="HistoBuddy user flow diagram" class="case-img">
+        </section>
+
+        <section class="case-section">
+            <h2>Wireframe to Final Design</h2>
+            <p>Before adding colors and images, I laid out the structure of all 6 screens in wireframes, then built on top of that same structure for the final design.</p>
+
+            <h3>Wireframes</h3>
+            <img src="histobuddy/wireframe.png" alt="HistoBuddy wireframes, all 6 screens" class="case-img">
+
+            <h3>Final Design</h3>
+            <img src="histobuddy/HistoBuddy.png" alt="HistoBuddy final design, all 6 screens" class="case-img">
+
+            <p>The gray placeholder boxes became warm, clay-textured illustrations featuring a recurring character, giving the app a crafted, adventure-like feel instead of a generic app look. "Continue with Email" and other key actions became a bold, consistent purple, so users always know the next step. Even with this full visual redesign, the screen order, layout, and information structure stayed exactly as planned in the wireframes, proving the original structure held up through a complete style change.</p>
+        </section>
+
+        <section class="case-section">
+            <h2>Design Choices</h2>
+            <ul class="choices-list">
+                <li>A consistent character guide instead of generic illustrations. A small recurring character appears across all 6 screens, acting like a "buddy" to learn alongside, which fits the HistoBuddy name and makes history feel like a guided adventure for a child.</li>
+                <li>Warm, sandy, clay-like tones instead of flat cartoon colors. The textured, earthy illustration style feels tied to history and discovery, making learning feel like exploring something real and exciting, not like sitting in a classroom.</li>
+                <li>One consistent accent color (deep purple/indigo). Every primary action uses the same color, so a child always knows what to tap next without guessing.</li>
+                <li>"Continue as a Guest" still kept. Children often don't have their own email, so this option removes that barrier completely.</li>
+                <li>Category pills and card layout kept from the original wireframe, proving the original structure was solid enough to carry through a full visual redesign.</li>
+                <li>Progress and rewards made visible. XP, streaks, and a progress bar turn finishing a lesson into a small win, which helps keep a child motivated to come back.</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <hr class="project-divider">
+
+    <!-- ============== DOZ MOTORS ============== -->
+    <header class="case-hero" id="doz-motors">
+        <h1>Doz Motors</h1>
+        <p class="subtitle">A premium car dealership website, built from scratch with HTML, CSS, and JavaScript</p>
+    </header>
+
+    <main>
+        <section class="case-section">
+            <h2>Overview</h2>
+            <img src="Doz-motors.png" alt="Doz Motors homepage" class="case-img">
+            <p>Doz Motors is a concept car dealership site built to practice real front-end development: structuring a multi-section layout, building reusable card components, and using JavaScript to let users filter a product grid without reloading the page.</p>
+        </section>
+
+        <section class="case-section">
+            <h2>My Role &amp; Tools</h2>
+            <p>I designed and built this project alone, from layout to logic, structuring the homepage and the car listings page, then writing the JavaScript that powers the category filtering.</p>
+            <div class="project-tools">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>Structure</h2>
+            <p>The site is split into two pages:</p>
+            <ul class="choices-list">
+                <li><strong>Home:</strong> A hero section, a short preview of featured cars, and a trust-building section about the inspection and warranty process.</li>
+                <li><strong>Cars:</strong> The full collection, with filter buttons (All, Sports, SUV, Saloon, Electric) that instantly show or hide cars by category.</li>
+            </ul>
+        </section>
+
+        <section class="case-section">
+            <h2>The Filtering Logic</h2>
+            <p>Each car card carries a hidden label (a <code>data-category</code> attribute) marking its type, and each filter button carries a matching label of its own. When a button is clicked, JavaScript compares the two labels: if they match, or if "All" is selected, the card stays visible; otherwise it's hidden. This was the trickiest part of the build, since it meant thinking through the logic before writing any code, not just styling what was already there.</p>
+        </section>
+
+        <section class="case-section">
+            <h2>Images</h2>
+            <p>Two of the car photos (the Sports and SUV models) are real stock-style photography. The remaining two (Saloon and Electric) were AI-generated to match the same photographic style, since real photography wasn't available for every category needed to demonstrate the filter working across all four types.</p>
+        </section>
+
+        <section class="case-section">
+            <h2>See It Live</h2>
+            <p><a href="dozmotors/index.html" class="project-btn" target="_blank" rel="noopener noreferrer">View Live Site</a></p>
+        </section>
+    </main>
+
+
+    <hr class="project-divider">
+
+    <!-- ============== ROCK PAPER SCISSORS ============== -->
+    <header class="case-hero" id="rps">
+    <h1>Rock Paper Scissors</h1>
+    <p class="subtitle">A fun project to practice real JavaScript logic</p>
+</header>
+
+<main>
+    <section class="case-section">
+        <h2>Overview</h2>
+        <p>A classic Rock, Paper, Scissors game, built just for practice. The goal wasn't to build something groundbreaking, it was to get real hands-on experience with JavaScript: randomness, comparisons, and updating a page live without reloading it.</p>
+    </section>
+
+    <section class="case-section">
+        <h2>Tools</h2>
+        <div class="project-tools">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </section>
+
+    <section class="case-section">
+        <h2>See It In Action</h2>
+        <p>Short demo of the game being played:</p>
+        <video class="case-video" autoplay loop muted playsinline>
+            <source src="rps/rps-demo.mp4" type="video/mp4">
+        </video>
+        <p><a href="rps/rps.html" class="project-btn" target="_blank" rel="noopener noreferrer">Play the Game Yourself</a></p>
+    </section>
+
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 16l6 -6l6 6" />
+                <path d="M6 10l6 -6l6 6" />
+            </svg>
+    </a>
+
+
+
+</main>
+    <footer class="pro">
+        <p>© 2026 Akujobi Daniel Chidozie — Designed &amp; built by hand.<br>Lagos, Nigeria</p>
+    </footer>
+
+<script src="theme-toggle.js"></script>
+</body>
+</html>
