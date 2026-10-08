@@ -33,6 +33,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--bg);
 }
 
 body {
@@ -43,6 +44,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     transition: background 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
 }
 
 section {
@@ -355,6 +357,32 @@ ul {
     overflow: hidden;
     border: 1px solid var(--border);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    background: radial-gradient(
+        400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(2, 132, 199, 0.18),
+        transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.project-card > * {
+    position: relative;
+    z-index: 2;
 }
 
 .project-card:hover {
@@ -614,6 +642,7 @@ footer {
     background-color: var(--bg-alt);
     border-top: 1px solid var(--border);
     margin-top: 30px;
+    padding-bottom: 80px;
 }
 
 footer p {
@@ -759,4 +788,53 @@ footer p {
 @keyframes floatRing {
     0%, 100% { transform: translateY(0) rotate(45deg); }
     50% { transform: translateY(-15px) rotate(55deg); }
+}
+
+.project-tag {
+    white-space: nowrap;
+}
+
+/* =========================================
+   14. SCROLLING SKILLS MARQUEE
+   ========================================= */
+.marquee {
+    overflow: hidden;
+    width: 100%;
+    padding: 25px 0;
+    margin: 40px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    /* Fade effect on both edges */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+    display: flex;
+    gap: 45px;
+    width: max-content;
+    animation: scrollMarquee 35s linear infinite;
+}
+
+.marquee-track span {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.marquee-track span:hover {
+    color: var(--accent);
+}
+
+@keyframes scrollMarquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* Pause on hover so users can read it */
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
 }
