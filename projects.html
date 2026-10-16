@@ -111,44 +111,104 @@
         </section>
 
         <section class="case-section">
-            <h2>See It Live</h2>
-            <p><a href="dozmotors/index.html" class="project-btn" target="_blank" rel="noopener noreferrer">View Live Site</a></p>
-        </section>
+    <h2>See It Live</h2>
+    <div class="project-actions">
+        <a href="dozmotors/index.html" class="project-btn" target="_blank" rel="noopener noreferrer">View Live Site</a>
+        <a href="https://github.com/Doziedc/dozmotors" class="project-btn project-btn-outline" target="_blank" rel="noopener noreferrer">View Source Code</a>
+    </div>
+</section>
     </main>
 
 
     <hr class="project-divider">
 
-    <!-- ============== ROCK PAPER SCISSORS ============== -->
-    <header class="case-hero" id="rps">
-    <h1>Rock Paper Scissors</h1>
-    <p class="subtitle">A fun project to practice real JavaScript logic</p>
+<!-- ============== HABIT TRACKER ============== -->
+<header class="case-hero" id="habit-tracker">
+    <h1>Habit Tracker</h1>
+    <p class="subtitle">A clean, dark-mode web app for building and tracking daily habits</p>
 </header>
 
 <main>
     <section class="case-section">
         <h2>Overview</h2>
-        <p>A classic Rock, Paper, Scissors game, built just for practice. The goal wasn't to build something groundbreaking, it was to get real hands-on experience with JavaScript: randomness, comparisons, and updating a page live without reloading it.</p>
+        <p>Habit Tracker is a fully functional web application designed to help users build daily routines. It goes beyond a simple to-do list by implementing real streak logic and persistent data storage, so users never lose their progress even if they close the browser.</p>
+        <img src="images/habit-tracker-detail.png" alt="Habit Tracker interface" class="case-img">
     </section>
 
     <section class="case-section">
-        <h2>Tools</h2>
+        <h2>My Role & Tools</h2>
+        <p>I designed and built the entire application from scratch. This project was a deep dive into state management, local storage persistence, and building a clean, usable dark-mode interface.</p>
         <div class="project-tools">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+            <span>localStorage</span>
         </div>
     </section>
 
     <section class="case-section">
-        <h2>See It In Action</h2>
-        <p>Short demo of the game being played:</p>
-        <video class="case-video" autoplay loop muted playsinline>
-            <source src="rps/rps-demo.mp4" type="video/mp4">
-        </video>
-        <p><a href="rps/rps.html" class="project-btn" target="_blank" rel="noopener noreferrer">Play the Game Yourself</a></p>
+        <h2>Key Features</h2>
+        <ul class="choices-list">
+            <li><strong>Full CRUD Functionality:</strong> Users can create, read, update, and delete habits instantly.</li>
+            <li><strong>Streak Logic:</strong> The app tracks consecutive days of completion, motivating users to maintain momentum.</li>
+            <li><strong>Persistence:</strong> All data is saved to the browser's localStorage, meaning habits survive page refreshes and browser restarts.</li>
+            <li><strong>Dark-Mode UI:</strong> A sleek, eye-friendly interface built entirely with Tailwind CSS.</li>
+        </ul>
     </section>
 
+   <section class="case-section">
+    <h2>See It Live</h2>
+    <div class="project-actions">
+        <a href="https://habit-tracker-wine-zeta-53.vercel.app/" class="project-btn" target="_blank" rel="noopener noreferrer">View Live Demo</a>
+        <a href="https://github.com/Doziedc/habit-tracker" class="project-btn project-btn-outline" target="_blank" rel="noopener noreferrer">View Source Code</a>
+    </div>
+</section>
+</main>
+
+<hr class="project-divider">
+
+<!-- ============== MOVIE NIGHT ============== -->
+<header class="case-hero" id="movie-night">
+    <h1>Movie Night</h1>
+    <p class="subtitle">A fast, responsive movie search application powered by the TMDB API</p>
+</header>
+
+<main>
+    <section class="case-section">
+        <h2>Overview</h2>
+        <p>Movie Night is a search engine for films. The goal of this project was to master API integration and handle real-world edge cases—like network errors, empty results, and loading delays—in a way that feels smooth and professional to the user.</p>
+        <img src="images/movie-night-detail.png" alt="Movie Night search interface" class="case-img">
+    </section>
+
+    <section class="case-section">
+        <h2>My Role & Tools</h2>
+        <p>I built the front-end architecture, integrated the TMDB API, and implemented UI state management for various loading and error scenarios.</p>
+        <div class="project-tools">
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+            <span>TMDB API</span>
+        </div>
+    </section>
+
+    <section class="case-section">
+        <h2>Key Features</h2>
+        <ul class="choices-list">
+            <li><strong>Debounced Search:</strong> Input is debounced to prevent spamming the API on every keystroke, improving performance and user experience.</li>
+            <li><strong>Pagination:</strong> Results are paginated, allowing users to browse through hundreds of movies without overwhelming the page.</li>
+            <li><strong>Full State Management:</strong> Handles loading spinners, empty search results, and API errors gracefully.</li>
+            <li><strong>Responsive Design:</strong> A movie-poster grid that adapts beautifully to any screen size.</li>
+        </ul>
+    </section>
+
+   <section class="case-section">
+    <h2>See It Live</h2>
+    <div class="project-actions">
+        <a href="https://movie-night-cyan-six.vercel.app/" class="project-btn" target="_blank" rel="noopener noreferrer">View Live Demo</a>
+        <a href="https://github.com/Doziedc/movie-night" class="project-btn project-btn-outline" target="_blank" rel="noopener noreferrer">View Source Code</a>
+    </div>
+</section>
+</main>
 
     <a href="#top" class="back-to-top" aria-label="Back to top">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">

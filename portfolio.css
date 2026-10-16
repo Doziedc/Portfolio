@@ -344,8 +344,8 @@ ul {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     margin-top: 20px;
 }
 
@@ -837,4 +837,25 @@ footer p {
 /* Pause on hover so users can read it */
 .marquee:hover .marquee-track {
     animation-play-state: paused;
+}
+
+/* Container for side-by-side buttons */
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Outlined button style for "Source Code" */
+.project-btn-outline {
+    background-color: transparent !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.project-btn-outline:hover {
+    background-color: var(--accent) !important;
+    color: #FFFFFF !important;
+    border-color: var(--accent) !important;
 }
