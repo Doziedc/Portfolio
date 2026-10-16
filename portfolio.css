@@ -638,11 +638,11 @@ ul {
    ========================================= */
 footer {
     text-align: center;
-    padding: 24px 20px;
+    padding: 30px 20px;
     background-color: var(--bg-alt);
     border-top: 1px solid var(--border);
     margin-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 footer p {
