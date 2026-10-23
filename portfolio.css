@@ -1,6 +1,3 @@
-/* =========================================
-   1. VARIABLES & RESET
-   ========================================= */
 :root {
     --bg: #0F172A;
     --bg-alt: #1E293B;
@@ -51,9 +48,6 @@ section {
     scroll-margin-top: 20px;
 }
 
-/* =========================================
-   2. TYPOGRAPHY & LINKS
-   ========================================= */
 h1, h2, h3 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
@@ -95,9 +89,6 @@ a {
 
 a:hover { color: var(--accent); }
 
-/* =========================================
-   3. NAVIGATION BAR
-   ========================================= */
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -202,9 +193,6 @@ a:hover { color: var(--accent); }
 
 .mobile-menu { display: none; }
 
-/* =========================================
-   4. HERO SECTION
-   ========================================= */
 .hero-section {
     position: relative;
     display: flex;
@@ -223,17 +211,28 @@ a:hover { color: var(--accent); }
     margin-bottom: 30px;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    padding: 15px 32px !important;
+    font-size: 1rem !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .hire-me-btn {
-    display: inline-block;
     background-color: var(--accent);
     color: #FFFFFF;
-    padding: 15px 32px;
     border: none;
-    border-radius: 30px;
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -265,7 +264,6 @@ a:hover { color: var(--accent); }
     50% { transform: translateY(-15px); }
 }
 
-/* Floating decoration between Hire Me and the About card */
 .hero-decor {
     position: absolute;
     bottom: -10px;
@@ -295,9 +293,6 @@ a:hover { color: var(--accent); }
     height: 60px;
 }
 
-/* =========================================
-   5. MAIN SECTIONS
-   ========================================= */
 .section-container {
     position: relative;
     max-width: 800px;
@@ -335,9 +330,6 @@ ul {
     color: var(--accent);
 }
 
-/* =========================================
-   6. PROJECTS
-   ========================================= */
 #projects {
     max-width: 800px;
 }
@@ -418,6 +410,7 @@ ul {
     border-radius: 20px;
     margin-bottom: 12px;
     width: fit-content;
+    white-space: nowrap;
 }
 
 .project-tools {
@@ -472,9 +465,25 @@ ul {
     color: var(--bg);
 }
 
-/* =========================================
-   7. CASE STUDIES
-   ========================================= */
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.project-btn-outline {
+    background-color: transparent !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.project-btn-outline:hover {
+    background-color: var(--accent) !important;
+    color: #FFFFFF !important;
+    border-color: var(--accent) !important;
+}
+
 .case-hero {
     text-align: center;
     padding: 40px 20px;
@@ -541,9 +550,6 @@ ul {
     border: 1px solid var(--border);
 }
 
-/* =========================================
-   8. TIMELINE
-   ========================================= */
 .timeline {
     display: flex;
     flex-direction: column;
@@ -569,9 +575,6 @@ ul {
     margin: 0;
 }
 
-/* =========================================
-   9. CONTACTS
-   ========================================= */
 .contact-links {
     display: flex;
     flex-direction: row;
@@ -605,9 +608,6 @@ ul {
     transform: translateY(-4px);
 }
 
-/* =========================================
-   10. BACK TO TOP
-   ========================================= */
 .back-to-top {
     display: flex;
     justify-content: center;
@@ -633,81 +633,65 @@ ul {
     transform: translateY(-4px);
 }
 
-/* =========================================
-   11. FOOTER
-   ========================================= */
 footer {
-    text-align: center;
-    padding: 30px 20px;
     background-color: var(--bg-alt);
     border-top: 1px solid var(--border);
-    margin-top: 30px;
-    padding-bottom: 50px;
-}
-
-footer p {
+    margin-top: 40px;
+    padding: 40px 20px 60px;
     font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+}
+
+.footer-brand h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--text-main);
+}
+
+.footer-brand p {
+    color: var(--text-muted);
     margin-bottom: 0;
+    font-size: 0.9rem;
 }
 
-/* =========================================
-   12. MOBILE
-   ========================================= */
-@media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hamburger { display: block; }
-
-    .nav-right { gap: 12px; }
-
-    .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        max-height: 0;
-        overflow: hidden;
-        background-color: var(--bg-alt);
-        padding: 0 20px;
-        transition: max-height 0.4s ease;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-    }
-
-    .mobile-menu a {
-        display: block;
-        padding: 15px 0;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .menu-toggle:checked ~ .mobile-menu {
-        max-height: 400px;
-        padding: 10px 20px;
-    }
-
-    .hero-section {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .hero-text { margin-bottom: 20px; }
-    .hero-visual { margin-bottom: 30px; }
-    .hero-decor { display: none; }
-
-    h1 { font-size: 2rem; }
-
-    .projects-grid { grid-template-columns: 1fr; }
-
-    .compare-pair { flex-direction: column; }
-    .compare-pair .case-img { width: 100%; }
-
-    .section-container {
-        margin: 16px 10px;
-        padding: 28px 15px;
-    }
+.footer-links, .footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
 }
 
-/* =========================================
-   13. BACKGROUND ORBS
-   ========================================= */
+.footer-links a, .footer-socials a {
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
 .orb-1 {
     position: fixed;
     top: -100px;
@@ -746,15 +730,6 @@ footer p {
     100% { transform: translate(0, 0) scale(1); }
 }
 
-@media (max-width: 768px) {
-    .orb-1, .orb-2 {
-        display: none;
-    }
-}
-
-/* =========================================
-   14. CSS GEOMETRIC ART
-   ========================================= */
 .css-blob {
     width: 180px;
     height: 180px;
@@ -790,13 +765,6 @@ footer p {
     50% { transform: translateY(-15px) rotate(55deg); }
 }
 
-.project-tag {
-    white-space: nowrap;
-}
-
-/* =========================================
-   14. SCROLLING SKILLS MARQUEE
-   ========================================= */
 .marquee {
     overflow: hidden;
     width: 100%;
@@ -804,7 +772,6 @@ footer p {
     margin: 40px 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    /* Fade effect on both edges */
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
@@ -834,28 +801,114 @@ footer p {
     to { transform: translateX(-50%); }
 }
 
-/* Pause on hover so users can read it */
 .marquee:hover .marquee-track {
     animation-play-state: paused;
 }
 
-/* Container for side-by-side buttons */
-.project-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 15px;
-}
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1001;
+    }
 
-/* Outlined button style for "Source Code" */
-.project-btn-outline {
-    background-color: transparent !important;
-    color: var(--text-main) !important;
-    border: 1px solid var(--border) !important;
-}
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: var(--text-main);
+        border-radius: 3px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
 
-.project-btn-outline:hover {
-    background-color: var(--accent) !important;
-    color: #FFFFFF !important;
-    border-color: var(--accent) !important;
+    .menu-toggle:checked ~ .hamburger span:nth-child(1) {
+        transform: translateY(5.5px) rotate(45deg);
+    }
+
+    .menu-toggle:checked ~ .hamburger span:nth-child(2) {
+        transform: translateY(-5.5px) rotate(-45deg);
+    }
+
+    .mobile-menu {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.4s ease-in-out;
+        flex-basis: 100%;
+        width: 100%;
+        background-color: var(--bg-alt);
+        overflow: hidden;
+    }
+
+    .mobile-menu-inner {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        transition: padding 0.4s ease-in-out;
+    }
+
+    .menu-toggle:checked ~ .mobile-menu {
+        grid-template-rows: 1fr;
+    }
+
+    .menu-toggle:checked ~ .mobile-menu .mobile-menu-inner {
+        padding: 20px;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-text { margin-bottom: 20px; }
+    .hero-visual { margin-bottom: 30px; }
+    .hero-decor { display: none; }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    h1 { font-size: 2rem; }
+
+    .projects-grid { grid-template-columns: 1fr; }
+
+    .compare-pair { flex-direction: column; }
+    .compare-pair .case-img { width: 100%; }
+
+    .section-container {
+        margin: 16px 10px;
+        padding: 28px 15px;
+    }
+    
+    .orb-1, .orb-2 {
+        display: none;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-links, .footer-socials {
+        align-items: center;
+    }
 }

@@ -6,24 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akujobi Daniel Chidozie | Portfolio</title>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     
-    <!-- NEW: Your Logo as Favicon -->
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none' stroke='%230284C7' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 12L4 20L14 28' /%3E%3Cpath d='M26 12L36 20L26 28' /%3E%3Cpath d='M22 8L18 32' /%3E%3C/svg%3E">
     
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
-    <!-- Background Orbs -->
     <div class="orb-1"></div>
     <div class="orb-2"></div>
 
-    <!-- NAVIGATION BAR -->
     <nav class="navbar">
 
-        <!-- Logo shapes -->
         <div class="nav-icons">
             <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 12L4 20L14 28" />
@@ -43,7 +38,6 @@
         </div>
 
         <div class="nav-right">
-            <!-- Desktop links -->
             <div class="nav-links">
                 <a href="#about">About Me</a>
                 <a href="#services">Services</a>
@@ -62,80 +56,82 @@
             </button>
         </div>
 
-        <!-- Mobile menu -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">☰</label>
+        
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+        </label>
 
         <div class="mobile-menu">
-            <a href="#about">About Me</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
+            <div class="mobile-menu-inner">
+                <a href="#about">About Me</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contacts</a>
+            </div>
         </div>
+
     </nav>
 
-    <!-- HERO SECTION -->
     <header class="hero-section" id="top">
         <div class="hero-text">
             <h1>Akujobi Daniel Chidozie</h1>
-            <p class="subtitle">UI/UX designer &rarr; Web developer</p>
-            <a href="#contacts" class="hire-me-btn">Hire Me</a>
+            <p class="subtitle">Frontend Developer | UI/UX Designer</p>
+            
+            <div class="hero-buttons">
+                <a href="#contacts" class="hire-me-btn">Hire Me</a>
+                <a href="resume.pdf" target="_blank" class="project-btn project-btn-outline">Download Resume</a>
+            </div>
         </div>
-
-       
 
         <div class="hero-visual">
             <img src="images/daniel-profile.png" alt="Akujobi Daniel Chidozie" class="profile-pic">
         </div>
-
-        
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
 
         <section id="about" class="section-container">
-           
-
             <h2>About Me</h2>
-            <p>I got into design through digital art and a love for creating things from scratch. My journey started with Canva, then grew into Blender, where I picked up a bit of 3D animation. From there, I taught myself UI design, and after a while, I started learning front-end development too.</p>
-
-            <p>What drives me is curiosity. I don't just want to know how something works, I want to experiment with it, break it, rebuild it, and eventually make something of my own. That mindset is what took me from being a digital artist to becoming a UI/UX designer and front-end developer.</p>
+            <p>I am a Frontend Developer and UI/UX Designer who bridges the gap between design and engineering. My journey began in digital art and UI design, but my curiosity to see my ideas fully realized led me to teach myself frontend development.</p>
+            
+            <p>Today, I specialize in building responsive, accessible, and high-performance web applications using React, Next.js, TypeScript, and Tailwind CSS. Because of my background in UX, I don't just write code—I build interfaces that prioritize user experience, maintain strict design systems, and solve real problems.</p>
+            
+            <p>I thrive on taking a project from a rough wireframe to a fully deployed, interactive product. I am currently seeking junior frontend roles where I can combine my design thinking with technical execution to build exceptional digital experiences.</p>
         </section>
 
-<div class="marquee">
-    <div class="marquee-track">
-        <!-- Set 1 -->
-        <span>Figma</span>
-        <span>UI Design</span>
-        <span>UX Research</span>
-        <span>Wireframing</span>
-        <span>Prototyping</span>
-        <span>Design Systems</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>TypeScript</span>
-        <span>Next.js</span>
-        <span>Tailwind CSS</span>
-        <span>API Integration</span>
-        
-        <!-- Set 2 (Duplicate for seamless loop) -->
-        <span>Figma</span>
-        <span>UI Design</span>
-        <span>UX Research</span>
-        <span>Wireframing</span>
-        <span>Prototyping</span>
-        <span>Design Systems</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>TypeScript</span>
-        <span>Next.js</span>
-        <span>Tailwind CSS</span>
-        <span>API Integration</span>
-    </div>
-</div>
+        <div class="marquee">
+            <div class="marquee-track">
+                <span>Figma</span>
+                <span>UI Design</span>
+                <span>UX Research</span>
+                <span>Wireframing</span>
+                <span>Prototyping</span>
+                <span>Design Systems</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>API Integration</span>
+                
+                <span>Figma</span>
+                <span>UI Design</span>
+                <span>UX Research</span>
+                <span>Wireframing</span>
+                <span>Prototyping</span>
+                <span>Design Systems</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>API Integration</span>
+            </div>
+        </div>
 
         <section id="services" class="section-container">
             <h2>Services</h2>
@@ -145,7 +141,7 @@
                     <li>UI Design</li>
                     <li>UX Research</li>
                     <li>Wireframing &amp; Prototyping</li>
-                    <li>Design System</li>
+                    <li>Design Systems</li>
                 </ul>
 
                 <h3>Front-End Development</h3>
@@ -164,9 +160,8 @@
             <h2>Projects</h2>
             <div class="projects-grid">
 
-                <!-- HistoBuddy card -->
                 <div class="project-card">
-                    <img src="HistoBuddy.png" alt="HistoBuddy app screens" class="project-img">
+                    <img src="histobuddy/HistoBuddy.png" alt="HistoBuddy app screens" class="project-img">
                     <div class="project-body">
                         <span class="project-tag">UI/UX Design</span>
                         <h3>HistoBuddy</h3>
@@ -179,7 +174,6 @@
                     </div>
                 </div>
 
-                <!-- Doz Motors card -->
                 <div class="project-card">
                     <img src="Doz-motors.png" alt="Doz Motors car website homepage" class="project-img">
                     <div class="project-body">
@@ -195,65 +189,65 @@
                     </div>
                 </div>
 
-               <!-- Habit Tracker Card -->
-<div class="project-card">
-    <img src="images/habit-tracker-detail.png" alt="Habit Tracker app screen" class="project-img">
-    <div class="project-body">
-        <span class="project-tag">Web App</span>
-        <h3>Habit Tracker</h3>
-        <p>A dark-mode habit tracker with CRUD, streak logic, and localStorage persistence.</p>
-        <div class="project-tools">
-            <span>Next.js</span>
-            <span>TypeScript</span>
-            <span>Tailwind CSS</span>
-        </div>
-        <a href="projects.html#habit-tracker" class="project-btn">View Case Study</a>
-    </div>
-</div>
+                <div class="project-card">
+                    <img src="images/habit-tracker-detail.png" alt="Habit Tracker app screen" class="project-img">
+                    <div class="project-body">
+                        <span class="project-tag">Web App</span>
+                        <h3>Habit Tracker</h3>
+                        <p>A dark-mode habit tracker with CRUD, streak logic, and localStorage persistence.</p>
+                        <div class="project-tools">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <a href="projects.html#habit-tracker" class="project-btn">View Case Study</a>
+                    </div>
+                </div>
 
-<!-- Movie Night Card -->
-<div class="project-card">
-    <img src="images/movie-night-detail.png" alt="Movie Night app screen" class="project-img">
-    <div class="project-body">
-        <span class="project-tag">Web App</span>
-        <h3>Movie Night</h3>
-        <p>A movie search app with debounced input, pagination, and full loading/empty/error states.</p>
-        <div class="project-tools">
-            <span>Next.js</span>
-            <span>TypeScript</span>
-            <span>Tailwind CSS</span>
-            <span>TMDB API</span>
-        </div>
-        <a href="projects.html#movie-night" class="project-btn">View Case Study</a>
-    </div>
-</div>
+                <div class="project-card">
+                    <img src="images/movie-night-detail.png" alt="Movie Night app screen" class="project-img">
+                    <div class="project-body">
+                        <span class="project-tag">Web App</span>
+                        <h3>Movie Night</h3>
+                        <p>A movie search app with debounced input, pagination, and full loading/empty/error states.</p>
+                        <div class="project-tools">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>TMDB API</span>
+                        </div>
+                        <a href="projects.html#movie-night" class="project-btn">View Case Study</a>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-        <section id="contacts" class="section-container">
-    <h2>Contacts</h2>
-    <p>Have a project in mind? I'd love to hear about it.</p>
+                <section id="contacts" class="section-container">
+            <h2>Contacts</h2>
+            <p>Have a project in mind? I'd love to hear about it.</p>
 
-    <div class="contact-links">
-        <a href="https://github.com/Doziedc" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577 0-.285-.01-1.04-.016-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.007-.322 3.3 1.23A11.5 11.5 0 0 1 12 5.8c1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.654 1.653.242 2.873.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.92.432.372.816 1.103.816 2.222 0 1.605-.015 2.896-.015 3.29 0 .32.192.694.8.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
-            </svg>
-        </a>
+            <div class="contact-links">
+                <a href="https://github.com/Doziedc" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577 0-.285-.01-1.04-.016-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.007-.322 3.3 1.23A11.5 11.5 0 0 1 12 5.8c1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.654 1.653.242 2.873.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.92.432.372.816 1.103.816 2.222 0 1.605-.015 2.896-.015 3.29 0 .32.192.694.8.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
 
-        <a href="https://www.linkedin.com/in/akujobi-daniel-45a561241" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452z"/>
-            </svg>
-        </a>
+                <a href="https://www.linkedin.com/in/akujobi-daniel-45a561241" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452z"/>
+                    </svg>
+                </a>
 
-        <a href="mailto:danielakujobi190@gmail.com" aria-label="Email" class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="4" width="20" height="16" rx="2"/>
-                <path d="M2 7l10 6 10-6"/>
-            </svg>
-        </a>
-    </div>
-</section>
+                <a href="mailto:danielakujobi190@gmail.com" aria-label="Email" class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M2 7l10 6 10-6"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
 
         <a href="#top" class="back-to-top" aria-label="Back to top">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
@@ -263,9 +257,27 @@
         </a>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p style="text-align:center;">© 2026 Akujobi Daniel Chidozie — Designed &amp; built by hand.<br>Lagos, Nigeria</p>
+       <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Akujobi Daniel</h3>
+                <p>Frontend Developer | UI/UX Designer</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contacts</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/Doziedc" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/akujobi-daniel-45a561241" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:danielakujobi190@gmail.com">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Akujobi Daniel Chidozie — Designed &amp; built by hand. Lagos, Nigeria.</p>
+        </div>
     </footer>
 
     <script src="theme-toggle.js"></script>
